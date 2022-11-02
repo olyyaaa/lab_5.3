@@ -1,28 +1,23 @@
 #include "pch.h"
 #include "CppUnitTest.h"
+#include "../lab_5.3/lab_5.3.cpp"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
 namespace UnitTest53
 {
-	TEST_CLASS(UnitTest53)
-	{
-	public:
-		
-		TEST_METHOD(TestjFunction)
-		{
-			const double x = 2;
-			double S = 0;
-			double j = 2;
-			double k = 4;
-			double& res = temp;
-			double expected = 2338;
-			j(z, R, res);
+  TEST_CLASS(UnitTest53)
+  {
+  public:
+    
+    TEST_METHOD(TestJFunction)
+    {
+      double a = 3;
+      double expected = -0.42976727906624879;
 
-			Assert::AreEqual(res, expected);
+      double res = j(a);
 
-
-		}
-		
-		}
-	};
+      Assert::AreEqual(res, expected);
+    }
+  };
+}
