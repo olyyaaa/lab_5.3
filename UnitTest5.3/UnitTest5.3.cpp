@@ -9,7 +9,7 @@ namespace UnitTest53
 	{
 	public:
 		
-		TEST_METHOD(TestzFunction)
+		TEST_METHOD(TestjFunction)
 		{
 			const double x = 2;
 			double S = 0;
@@ -17,7 +17,7 @@ namespace UnitTest53
 			double k = 4;
 			double& res = temp;
 			double expected = 2338;
-			z(j, k, res);
+			j(z, R, res);
 
 			Assert::AreEqual(res, expected);
 
